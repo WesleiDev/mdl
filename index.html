@@ -65,6 +65,36 @@
 		color: #fff;
 	}
 
+	.container-menu{
+		position: relative;
+		width: 200px;
+		display: inline-block;
+		margin: 5px;
+		vertical-align: top;
+	}
+
+	.background-menu{
+		background: white;
+		height: 148px;
+		width: 100%;
+	}
+
+	.bar-menu-right, .bar-menu-left{
+		box-sizing: border-box;
+		background: #3F51B5;
+		color: white;
+		width: 100%;
+		padding: 16px;
+	}
+
+	.bar-menu-right{
+		text-align: right;
+	}
+
+	.bar-menu-left{
+		text-align: left;
+	}
+
 
 
 </style>
@@ -262,7 +292,55 @@
 					</div>
 				</div>
 
+			<div class="mdl-grid">
+				<div class="mdl-cell--8-col">
+					<h3>Menus</h3>
+					<div class="container-menu mdl-shadow--2dp">
+						<div class="bar-menu-left">
+							<button id="menu1" class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">more_vert</i>
+							</button>
+							<ul for="menu1" class="mdl-menu mdl-js-menu">
+								<li class="mdl-menu__item">Item 1</li>
+								<li class="mdl-menu__item">Item 2</li>
+								<li class="mdl-menu__item">Item3</li>
+							</ul>
 
+						</div>
+						<div class="background-menu"></div>
+					</div>
+
+					<div class="container-menu mdl-shadow--2dp">
+						<div class="bar-menu-right">
+							<button id="menu2" class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">more_vert</i>
+							</button>
+							<ul for="menu2" class="mdl-menu mdl-js-menu mdl-menu--bottom-right">
+								<li class="mdl-menu__item">Item 1</li>
+								<li class="mdl-menu__item">Item 2</li>
+								<li class="mdl-menu__item">Item3</li>
+							</ul>
+
+						</div>
+						<div class="background-menu"></div>
+					</div>
+
+					<div class="container-menu mdl-shadow--2dp">
+						<div class="background-menu"></div>
+						<div class="bar-menu-right">
+							<button id="menu3" class="mdl-button mdl-js-button mdl-button--icon">
+								<i class="material-icons">more_vert</i>
+							</button>
+							<ul for="menu3" class="mdl-menu mdl-js-menu mdl-menu--top-right">
+								<li class="mdl-menu__item"><a href="#">Item 1</a></li>
+								<li class="mdl-menu__item">Item 2</li>
+								<li class="mdl-menu__item">Item3</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
 			
 			</main>
 
